@@ -165,6 +165,10 @@ font-family:tahoma;
 .body_middle{
 	background:url('../images/logol1.jpg');
 	background-repeat:repeat-x;
+	color:red;/* this is new change */
+	font-family:Roman;
+	font-size:30px;
+        text-decoration:middle;
 }
 .body_image{
 	padding:10;
