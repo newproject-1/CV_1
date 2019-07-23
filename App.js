@@ -3,9 +3,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Navigation, Drawer, Layout, Content, Header } from "react-mdl";
+import FormPersonalDetails from './FormPersonalDetails'
 
 function App() {
   return (
+    <BrowserRouter>
+    <Route path "/" component= {FormPersonalDetails}/>
+ 
     <div style={{ height: "300px", position: "relative" }}>
       <Layout
         style={{
@@ -30,6 +34,7 @@ function App() {
         <Content />
       </Layout>
     </div>
+    </BrowserRouter>
   );
 }
 
