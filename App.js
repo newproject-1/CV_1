@@ -3,13 +3,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Navigation, Drawer, Layout, Content, Header } from "react-mdl";
-import FormPersonalDetails from './FormPersonalDetails'
-
+import UserForm from './UserForm';
+import Header from './Header';
 function App() {
   return (
     <BrowserRouter>
-    <Route path "/" component= {FormPersonalDetails}/>
- 
+    <Route path "/" component= {UserForm}/>
+     <Route path "/header" component= {Header}/>
     <div style={{ height: "300px", position: "relative" }}>
       <Layout
         style={{
